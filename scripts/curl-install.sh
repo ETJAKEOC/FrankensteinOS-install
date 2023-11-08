@@ -2,8 +2,8 @@
 
 # Checking if is running in Repo Folder
 if [[ "$(basename "$(pwd)" | tr '[:upper:]' '[:lower:]')" =~ ^scripts$ ]]; then
-    echo "You are running this in ArchTitus Folder."
-    echo "Please use ./archtitus.sh instead"
+    echo "You are running this in FrankensteinOS-install Folder."
+    echo "Please use ./install.sh instead"
     exit
 fi
 
@@ -13,10 +13,10 @@ echo "Installing git."
 pacman -Sy --noconfirm --needed git glibc
 
 echo "Cloning the ArchTitus Project"
-git clone https://github.com/christitustech/ArchTitus
+git clone https://github.com/ETJAKEOC/FrankensteinOS-install
 
-echo "Executing ArchTitus Script"
+echo "Executing FrankensteinOS-install Script"
 
-cd $HOME/ArchTitus
+cd $HOME/FrankensteinOS-install
 
-exec ./archtitus.sh
+exec ./install.sh
