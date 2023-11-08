@@ -12,7 +12,7 @@ fi
 echo "Installing git."
 pacman -Sy --noconfirm --needed git glibc
 
-echo "Cloning the ArchTitus Project"
+echo "Cloning the FrankensteinOS-install Project"
 git clone https://github.com/ETJAKEOC/FrankensteinOS-install
 
 echo "Executing FrankensteinOS-install Script"
